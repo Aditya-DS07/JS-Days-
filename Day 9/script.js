@@ -11,18 +11,14 @@
 //     query2[i].textcontent="this is a text content"
 // }
 
-const subHeading = document.getElementsByClassName("subheading");
-console.log(subHeading);
-
-for(let i=0;i<subHeading.length;i++){
-    subHeading[1].style.color="blue";
+const para = document.getElementsByTagName("p");
+console.log(para);
+for (let i = 0; i<para.length;i++) {
+    para[i].textContent="This is a pragraph text";
+    if(i%2==0){
+        para[i].style.color="blue";
+    }else{
+        para[i].style.color="green";
+    }
 }
-for(let i=0;i<subHeading.length;i++){
-    subHeading[3].style.color="blue";
-}
-for(let i=0;i<subHeading.length;i++){
-    subHeading[0].style.color=" green";
-}for(let i=0;i<subHeading.length;i++){
-    subHeading[2].style.color="green";
-}
-subHeading[subHeading.length-1].style.fontweight="bold";
+para[para.length-1].style.fontWeight="bold"
